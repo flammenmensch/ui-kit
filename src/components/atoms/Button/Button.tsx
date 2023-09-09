@@ -8,7 +8,7 @@ export const Button = (props: AriaButtonProps) => {
   return (
     <button
       {...buttonProps}
-      className="rounded-full shadow-sm px-4 py-2 bg-blue-600 text-white"
+      className="rounded-full shadow-sm px-4 py-2 bg-slate-950 text-white"
       ref={ref}
     >
       {props.children}

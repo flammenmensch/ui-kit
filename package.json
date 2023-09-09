@@ -1,0 +1,58 @@
+{
+  "name": "@flammenmensch/ui-kit",
+  "version": "1.0.0",
+  "description": "UI kit for React-based projects",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "storybook dev -p 6006",
+    "build:js": "tsup",
+    "build:styles": "npx tailwindcss -i ./src/index.css -o ./dist/index.css",
+    "build": "npm run build:styles && npm run build:js",
+    "build-storybook": "storybook build"
+  },
+  "keywords": [
+    "ui-kit",
+    "react",
+    "tailwindcss"
+  ],
+  "author": "Flammenmensch <maleventum@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.4.0",
+    "@storybook/addon-interactions": "^7.4.0",
+    "@storybook/addon-links": "^7.4.0",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.4.0",
+    "@storybook/react": "^7.4.0",
+    "@storybook/react-vite": "^7.4.0",
+    "@storybook/testing-library": "^0.2.0",
+    "@testing-library/react": "^14.0.0",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "@typescript-eslint/parser": "^6.6.0",
+    "autoprefixer": "^10.4.15",
+    "chromatic": "^7.1.0",
+    "eslint": "^8.49.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-storybook": "^0.6.13",
+    "postcss": "^8.4.29",
+    "prettier": "^3.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.4.0",
+    "tailwindcss": "^3.3.3",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.4"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "dependencies": {
+    "clsx": "^2.0.0",
+    "react-aria": "^3.28.0"
+  }
+}

@@ -1,19 +1,18 @@
-import React, { useRef } from 'react';
-import { AriaButtonProps, useButton } from 'react-aria';
+import React, { forwardRef } from 'react';
+import { AriaButtonProps } from 'react-aria';
+import { Button as RACButton } from 'react-aria-components';
 
-export const Button = (props: AriaButtonProps) => {
-  const ref = useRef<HTMLButtonElement>(null);
-  const { buttonProps } = useButton(props, ref);
-
-  return (
-    <button
-      {...buttonProps}
-      className="rounded-full shadow-sm px-4 py-2 bg-slate-950 text-white"
+/**
+ * Button component
+ */
+export const Button = forwardRef<HTMLButtonElement, AriaButtonProps>(
+  (props, ref) => (
+    <RACButton
+      {...props}
+      className="rounded-lg px-4 py-2 bg-foreground text-background"
       ref={ref}
-    >
-      {props.children}
-    </button>
-  );
-};
+    />
+  )
+);
 
 Button.displayName = 'Button';

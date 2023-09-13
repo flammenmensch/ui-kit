@@ -4,7 +4,7 @@ const plugin = require('tailwindcss/plugin');
 module.exports = {
   mode: 'jit',
   content: ['./src/components/**/*.{ts,tsx}'],
-  darkMode: ['class', '[data-mode="dark"]'],
+  darkMode: ['class', '[data-theme="dark"]'],
   theme: {
     extend: {
       fontFamily: {
@@ -12,12 +12,12 @@ module.exports = {
       },
       colors: ({ colors }) => ({
         background: colors.white,
-        foreground: colors.slate['800'],
-        primary: colors.slate['800'],
+        foreground: colors.stone['800'],
+        primary: colors.stone['800'],
         secondary: colors.gray['500'],
-        accent: colors.gray['500'],
-        danger: colors.red['700'],
-        success: colors.lime['700'],
+        accent: colors.sky['800'],
+        danger: colors.red['600'],
+        success: colors.emerald['600'],
         warning: colors.yellow['400'],
         link: colors.sky['600'],
       }),

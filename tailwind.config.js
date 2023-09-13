@@ -15,7 +15,7 @@ module.exports = {
         foreground: colors.stone['800'],
         primary: colors.stone['800'],
         secondary: colors.gray['500'],
-        accent: colors.sky['600'],
+        accent: colors.sky['800'],
         danger: colors.red['600'],
         success: colors.emerald['600'],
         warning: colors.yellow['400'],
